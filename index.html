@@ -3,46 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasby Asshiddiqi - Bio Link</title>
+    <title>Hasby Asshiddiqi</title>
+    <!-- Mengambil aset ikon media sosial dari internet (Font Awesome CDN) -->
+    <link rel="stylesheet" href="cloudflare.com">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
-        body { background: linear-gradient(135deg, #0f172a, #1e293b); color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-        .container { width: 100%; max-width: 450px; text-align: center; }
-        .profile-img { width: 96px; height: 96px; border-radius: 50%; border: 3px solid #38bdf8; object-fit: cover; margin-bottom: 16px; }
-        h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
-        p { font-size: 0.95rem; color: #94a3b8; margin-bottom: 24px; }
-        .links-wrapper { display: flex; flex-direction: column; gap: 16px; }
-        .btn-link { display: block; background-color: #1e293b; color: #ffffff; text-decoration: none; padding: 16px; border-radius: 12px; font-weight: 600; border: 1px solid #334155; transition: all 0.2s ease-in-out; }
-        .btn-link:hover { background-color: #38bdf8; color: #0f172a; border-color: #38bdf8; transform: translateY(-2px); }
-        .btn-disabled { display: block; background-color: #0f172a; color: #64748b; text-decoration: none; padding: 16px; border-radius: 12px; font-weight: 600; border: 1px solid #1e293b; cursor: not-allowed; opacity: 0.6; }
+        
+        /* Latar belakang luar */
+        body { background-color: #1e293b; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        
+        /* Bingkai Putih Kartu Pokemon TCG */
+        .pokemon-card-border { 
+            background-color: #ffffff; 
+            padding: 14px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
+            width: 100%; 
+            max-width: 430px; 
+        }
+        
+        /* Bagian Dalam Kartu Kuning */
+        .container { 
+            background: linear-gradient(180deg, #ffde00, #f6b519); 
+            border-radius: 12px; 
+            padding: 30px 20px; 
+            text-align: center; 
+            border: 4px solid #c89600; 
+        }
+        
+        /* Foto Profil 
+        .profile-img { width: 110px; height: 110px; border-radius: 50%; border: 4px solid #1e293b; object-fit: cover; margin-bottom: 16px; background-color: #ffffff; }
+        */
+        /* Teks Elemen Kartu */
+        h1 { font-size: 1.6rem; font-weight: 800; color: #1e293b; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        p { font-size: 0.9rem; color: #475569; font-weight: 600; margin-bottom: 24px; }
+        
+        /* Wrapper Tombol */
+        .links-wrapper { display: flex; flex-direction: column; gap: 14px; }
+        
+        /* Desain Tombol List Tautan dengan Ikon */
+        .btn-link { 
+            display: flex; 
+            align-items: center; 
+            background-color: #1e293b; 
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 14px 20px; 
+            border-radius: 10px; 
+            font-weight: 700; 
+            border: 2px solid #1e293b; 
+            transition: all 0.2s ease-in-out; 
+        }
+        .btn-link:hover { background-color: #ffffff; color: #1e293b; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        
+        /* Pengaturan Ikon di dalam Tombol */
+        .btn-link i, .btn-disabled i { 
+            font-size: 1.3rem; 
+            width: 30px; 
+            text-align: left; 
+        }
+        
+        /* Teks di dalam tombol agar berada di tengah */
+        .btn-text { flex-grow: 1; text-align: center; padding-right: 30px; }
+        
+        /* Tombol Non-aktif (Coming Soon) */
+        .btn-disabled { 
+            display: flex; 
+            align-items: center; 
+            background-color: #e2e8f0; 
+            color: #94a3b8; 
+            text-decoration: none; 
+            padding: 14px 20px; 
+            border-radius: 10px; 
+            font-weight: 700; 
+            border: 2px dashed #cbd5e1; 
+            cursor: not-allowed; 
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Foto Profil Sementara -->
-        <img class="profile-img" src="picsum.photos" alt="Foto Profil">
+
+    <!-- Bingkai Putih TCG (Outer Border) -->
+    <div class="pokemon-card-border">
         
-        <!-- Informasi Profil -->
-        <h1>Hasby Asshiddiqi</h1>
-        <p>Hubungi atau ikuti media sosial saya di bawah ini</p>
-        
-        <!-- Daftar Tombol Tautan -->
-        <div class="links-wrapper">
-            <!-- Tautan 1: WhatsApp Jepang (+81) -->
-            <a href="wa.me" target="_blank" class="btn-link">Hubungi via WhatsApp</a>
+        <!-- Isi Kartu Kuning TCG (Inner Card) -->
+        <div class="container">
+            <!-- Foto Profil 
+            <img class="profile-img" src="picsum.photos" alt="Foto Profil">
+            -->
+            <!-- Informasi Profil -->
+            <h1>Hasby Asshiddiqi</h1>
+            <p>BASIC POKEMON • HP 100</p>
             
-            <!-- Tautan 2: Instagram -->
-            <a href="https://www.instagram.com/h.diqi2?igsh=MTJlMjd0N3lwY2Y1bA==" target="_blank" class="btn-link">Ikuti di Instagram</a>
-            
-            <!-- Tautan 3: Facebook -->
-            <a href="https://www.facebook.com/share/196b3CRYCZ/" target="_blank" class="btn-link">Hubungkan di Facebook</a>
-            
-            <!-- Tautan 4: LinkedIn -->
-            <a href="https://www.linkedin.com/in/hasby-asshiddiqi-2462a0162?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn-link">Profil LinkedIn</a>
-            
-            <!-- Tautan 5: TikTok (Coming Soon) -->
-            <div class="btn-disabled">TikTok (Coming Soon)</div>
+            <!-- Daftar Tombol Tautan -->
+            <div class="links-wrapper">
+                <!-- WhatsApp -->
+                <a href="wa.me/+818063698709" target="_blank" class="btn-link">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span class="btn-text">WhatsApp</span>
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/h.diqi2?igsh=MTJlMjd0N3lwY2Y1bA==" target="_blank" class="btn-link">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="btn-text">Instagram</span>
+                </a>
+                
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/196b3CRYCZ/" target="_blank" class="btn-link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span class="btn-text">Facebook</span>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/hasby-asshiddiqi-2462a0162?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span class="btn-text">LinkedIn</span>
+                </a>
+                
+                <!-- TikTok (Coming Soon) -->
+                <div class="btn-disabled">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span class="btn-text">TikTok (Coming Soon)</span>
+                </div>
+            </div>
         </div>
+        
     </div>
+
 </body>
 </html>
