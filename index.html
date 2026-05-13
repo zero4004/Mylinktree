@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasby Asshiddiqi - Bio Link</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background: linear-gradient(135deg, #0f172a, #1e293b); color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .container { width: 100%; max-width: 450px; text-align: center; }
+        .profile-img { width: 96px; height: 96px; border-radius: 50%; border: 3px solid #38bdf8; object-fit: cover; margin-bottom: 16px; }
+        h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
+        p { font-size: 0.95rem; color: #94a3b8; margin-bottom: 24px; }
+        .links-wrapper { display: flex; flex-direction: column; gap: 16px; }
+        .btn-link { display: block; background-color: #1e293b; color: #ffffff; text-decoration: none; padding: 16px; border-radius: 12px; font-weight: 600; border: 1px solid #334155; transition: all 0.2s ease-in-out; }
+        .btn-link:hover { background-color: #38bdf8; color: #0f172a; border-color: #38bdf8; transform: translateY(-2px); }
+        .btn-disabled { display: block; background-color: #0f172a; color: #64748b; text-decoration: none; padding: 16px; border-radius: 12px; font-weight: 600; border: 1px solid #1e293b; cursor: not-allowed; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Foto Profil Sementara -->
+        <img class="profile-img" src="picsum.photos" alt="Foto Profil">
+        
+        <!-- Informasi Profil -->
+        <h1>Hasby Asshiddiqi</h1>
+        <p>Hubungi atau ikuti media sosial saya di bawah ini</p>
+        
+        <!-- Daftar Tombol Tautan -->
+        <div class="links-wrapper">
+            <!-- Tautan 1: WhatsApp Jepang (+81) -->
+            <a href="wa.me" target="_blank" class="btn-link">Hubungi via WhatsApp</a>
+            
+            <!-- Tautan 2: Instagram -->
+            <a href="https://www.instagram.com/h.diqi2?igsh=MTJlMjd0N3lwY2Y1bA==" target="_blank" class="btn-link">Ikuti di Instagram</a>
+            
+            <!-- Tautan 3: Facebook -->
+            <a href="https://www.facebook.com/share/196b3CRYCZ/" target="_blank" class="btn-link">Hubungkan di Facebook</a>
+            
+            <!-- Tautan 4: LinkedIn -->
+            <a href="https://www.linkedin.com/in/hasby-asshiddiqi-2462a0162?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn-link">Profil LinkedIn</a>
+            
+            <!-- Tautan 5: TikTok (Coming Soon) -->
+            <div class="btn-disabled">TikTok (Coming Soon)</div>
+        </div>
+    </div>
+</body>
+</html>
